@@ -1590,7 +1590,7 @@ function toggleEdit(id){
 
 function smartParse(text){
   const lines = text.split('\n').map(l=>l.trim()).filter(Boolean);
-  const result = { phonetic:'', meaning:'', wordForm:'', example:'', exampleVi:'', synonyms:[], collocations:[] };
+  const result = { phonetic:'', meaning:'', wordForm:'', example:'', exampleVi:'', synonyms:[], collocations:[], topic:'' };
   let i = 0;
   while(i < lines.length){
     const line = lines[i];
