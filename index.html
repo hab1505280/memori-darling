@@ -1619,7 +1619,7 @@ function smartParse(text){
       if(i+1 < lines.length){
         const next = lines[i+1];
         // Check if next line looks Vietnamese (has diacritics or is not a keyword)
-        if(!/^(Synonyms|Collocations|Word form|Example|Ví dụ|\/)/i.test(next)){
+        if(!/^(Synonyms|Collocations|Word form|Example|Ví dụ|Topic|\/)/i.test(next)){
           result.exampleVi = next;
           i++;
         }
